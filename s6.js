@@ -15,36 +15,78 @@ console.log(john);
 console.log(mark);
 console.log(jane);
 */
+
+//Class
+/*
+class Person {
+    constructor(name, birthYear, job) {
+        this.name = name;
+        this.birthYear = birthYear;
+        this.job = job;
+    }
+}
+const john = new Person('John', 1990, 'Developer');
+const mark = new Person('Mark', 1985, 'Teacher');
+const jane = new Person('Jane', 1975, 'Designer');
+
+console.log(john);
+console.log(mark);
+console.log(jane);
+*/
 //---------------------------------
 
 //Ejercicio 2 --> S6
 //---------------------------------
-/*
-const Person = function (name) {
-    this.name = name;
+/* 
+// const Person = function (name) {
+//     this.name = name;
+// }
+
+// const Developer = function (name, skills, yearsOfExperience) {
+//     Person.call(this, name);
+
+//     this.skills = skills;
+//     this.yearsOfExperience = yearsOfExperience;
+// }
+
+//  Class
+class Person{
+    constructor(name){
+        this.name = name;
+    }
 }
-
-const Developer = function (name, skills, yearsOfExperience) {
-    Person.call(this, name);
-
-    this.skills = skills;
-    this.yearsOfExperience = yearsOfExperience;
+class Developer extends Person{
+    constructor(name, skills, yearsOfExperience) {
+        super(name);
+        this.skills = skills;
+        this.yearsOfExperience = yearsOfExperience;
+    }
 }
 
 const john = new Developer('John', 'JavaScript', 10);
 
 console.log(john);
-*/
+ */
 //---------------------------------
 
 //Ejercicio 3 --> S6
 //---------------------------------
-/*
-const Person = function (name, birthYear, job) {
-    this.name = name;
-    this.birthYear = birthYear;
-    this.job = job;
+/* 
+// const Person = function (name, birthYear, job) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//     this.job = job;
+// }
+
+ Class
+class Person {
+    constructor(name, birthYear, job) {
+        this.name = name;
+        this.birthYear = birthYear;
+        this.job = job;
+    }
 }
+
 Person.prototype.calculateAge = function () {
     const today = new Date();
     const year = today.getFullYear();
@@ -62,7 +104,7 @@ jane.calculateAge();
 console.log(john);
 console.log(mark);
 console.log(jane);
-*/
+ */
 //---------------------------------
 
 //Reto 1 --> S6
@@ -144,5 +186,28 @@ Triangle.prototype.getPerimeter = function(){
 const triangle = new Triangle(1, 2, 3);
 
 console.log(triangle); // Triangle { a: 1, b: 2, c: 3 }
-console.log(triangle.getPerimeter()); // 6 */
+console.log(triangle.getPerimeter()); // 6
+*/
 //---------------------------------
+
+//Ejemplo class
+/*
+class Hola {
+    constructor(a, b, c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    suma(){
+        return this.a + this.b + this.c;
+    }
+    producto(){
+        return this.a * this.b * this.c;
+    }
+}
+
+a = new Hola(2, 3, 4);
+console.log(a);
+console.log(a.suma());
+console.log(a.producto());
+*/
