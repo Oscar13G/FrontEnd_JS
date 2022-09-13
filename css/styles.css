@@ -13,7 +13,7 @@ body{
     background: linear-gradient(to left, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ;
 }
-#buttonSesion2{
+#buttonSesion{
     background-color: rgb(120, 115, 115);
     color: aliceblue;
 }

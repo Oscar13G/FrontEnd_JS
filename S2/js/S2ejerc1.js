@@ -1,6 +1,7 @@
 //Ejercicio 1 S2
 //---------------------------------
-const time = 13;
+const day = new Date();
+const time = day.getHours();
 let greeting;
 
 if (time < 12) {
@@ -19,6 +20,6 @@ const contenido = document.getElementById('contenido');
 const node = document.createElement('p');
 
 node.className = "textContent";
-node.innerHTML = `<b>Resultado:</b><br> Son las <u>${time}:00</u> hrs. --> "<u>${greeting}</u>"<br><br>*NOTA: Presiona F12 para ver el resultado en consola.`;
+node.innerHTML = `<b>Resultado:</b><br> Son las <u>${time}:${day.getMinutes()}</u> hrs. --> "<u>${greeting}</u>"<br><br>*NOTA: Presiona F12 para ver el resultado en consola.`;
 contenido.appendChild(node);
 
